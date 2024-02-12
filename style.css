@@ -1,0 +1,64 @@
+body{
+    background-color: #f7e9f7;
+    justify-content: center;
+    align-items: center;
+}
+.content .hovered { display: none; }
+.content:hover .hovered { display: block; }
+.content:hover .initial { display: none; }
+
+.bar{
+    margin: auto;
+    width: 40%;
+    height: 8vh;
+    top: 40%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    box-shadow: #8c126c 0px 10px 20px -10px;
+    }
+
+@keyframes progress {
+    0% {width: 0%;}
+    100% {width: 3.6%;}
+}
+.progress-bar {
+    position: relative;
+  }
+
+.progress{
+    height: 8vh;
+    top: 40%;
+    background-color: #FFCDF2;
+    border-radius: 10px;
+    animation: progress 7s ease-in-out forwards;
+    position: absolute;
+    left: 30%; }
+
+.cat{
+    position: absolute;
+    top: -150%;
+    left: -7%;
+    width: 20vh;
+    z-index: 1;
+}
+
+text{
+    position: absolute;
+    margin: auto;
+    width: 40%;
+    height: 4vh;
+    top: 52%;
+    left: 30%; 
+    text-align: center;
+    font-family: monospace;
+    color: #5b5b5b;
+    margin: auto;
+    z-index: 1;
+    font-size: 2vh;
+}
+
+.content:hover{
+    color: #5b5b5b;
+}
